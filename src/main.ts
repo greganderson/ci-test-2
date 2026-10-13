@@ -18,10 +18,6 @@ if (!config.api.port) {
 const app = express();
 app.use(express.json());
 
-function unused() {
-  // This is unused
-}
-
 app.use(
   cors({
     origin: ["https://*", "http://*"],
